@@ -1,0 +1,11 @@
+FROM node:14.16.1-alpine3.10
+
+RUN /bin/sh -c "apk update && apk add --no-cache bash"
+
+WORKDIR /app
+
+RUN ["/bin/bash", "-c", "npm install yarn"]
+
+EXPOSE 3000
+
+CMD yarn start

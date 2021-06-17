@@ -1,0 +1,9 @@
+**/firebase/config.ts
+
+node_modules/
+dist/
+env.*
+
+# Common IDE Config Files
+.vscode
+.idea
